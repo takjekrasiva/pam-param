@@ -26,6 +26,6 @@ cnt++;
 }
 }
 printf("number of odd words=%d\n", k); // вывод счетчика нечетных слов
-getch();
+getchar();
 return 0;
 }
