@@ -20,11 +20,6 @@ int main(void)
 			pol++;
 		}
 	}
-	if (otr == pol)
-	{
-	}
-	else
-	{
 // обнуление элементов
 		if (otr < pol)
 		{
