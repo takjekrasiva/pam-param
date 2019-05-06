@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #define N 3 
 #define N 3 
-main()
+main(void)
 {
 	int i; // stroka
 	int j; // stolbe
