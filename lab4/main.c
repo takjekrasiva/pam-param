@@ -31,7 +31,7 @@ void main(void)
 		line[i] ++;
 	}
 	line[i] = start;
-	while (line[i] i < (MAXLINE - maximum)) // перезапись
+	while (line[i] < (MAXLINE - maximum)) // перезапись
 	{
 		line[i] = line[i + maximum];
 		line[i] ++;
