@@ -15,7 +15,7 @@ void main(void)
 			cnt++;
 			if (cnt > maximum)
 			{
-				max = cnt;
+				maximum = cnt;
 				start = i - maximum + 1;
 			}
 		}
