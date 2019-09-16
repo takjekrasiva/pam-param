@@ -3,20 +3,11 @@
 #define YES 1
 #define NO 0
 
-void process_line(char buffer[]);
-
 int main(void)
 {
-	char line[MAXLINE];
+	char buffer[MAXLINE];
 	printf("please, enter some words \n");
-	gets(line);
-	process_line(line);
-	puts(line);
-	return 0;
-}
-
-void process_line(char buffer[])
-{
+	gets(buffer);
 	char c;// Текущий символ
 	int i = 0;//счетчик всех букв
 	int word = NO;//признак слова
@@ -34,7 +25,7 @@ void process_line(char buffer[])
 	{
 		c = buffer[cur]; // взять текущий символ из буфера
 		if (c == ' ' || c == '.' || c == ',' || c == '\n' || c == '\0' || c == '?' || c == '!' || c == ';' || c == ':' ||
-			c == '-' || c == '_' || c == '(' || c == ')' || c == '\t' || c == '/' || c == '&' || c == '"') // разделитель найден
+			c == '-' || c == '_' || c == '(' || c == ')' || c == '\t' || c == '/' || c == '&' || c == '"' || c == ' ') // разделитель найден
 		{
 			if (word == YES && symb == NO)
 			{
@@ -66,8 +57,10 @@ void process_line(char buffer[])
 	{
 		if (j == b)
 		{
-			j = j + max + 1;
+			j = j + max;
 		}
 		buffer[res++] = buffer[j];
 	}
+	puts(buffer);
+	return 0;
 }
